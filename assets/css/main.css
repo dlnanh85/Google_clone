@@ -16,8 +16,9 @@
 .header {
     display: flex;
     justify-content: end;
-    padding: 14px 16px;
+    padding: 10px 16px;
     line-height: 100%;
+    position: relative;
 }
 
 .header .nav {
@@ -37,25 +38,42 @@
 }
 
 .header .app-menu-button {    
-    padding: 0px 22px;
+    padding: 0px 8px;
     margin: auto 0;
     font-size: 17px;
 }
 
 .header .app-menu-button i {
+    display: block;
+    padding: 12px;
     font-size: 17px;
 }
 
+.header .app-menu-button i:hover {
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
 .header .app-menu {
-    display: none;
+    display: block;
+    position: absolute;
 }
 
 .header .avatar {
+    display: flex;
+    padding: 5px;
+    border-radius: 50%;
+}
 
+.header .avatar:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
 }
 
 .header .avatar img {
     border-radius: 50%;
+    margin: auto 0;
 }
 /* END: HEADER */
 

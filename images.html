@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Images</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/images.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <div class="app-menu-button">
+            <i class="ti-layout-grid3-alt"></i>
+            <div class="app-menu">
+                <ul>
+                    <li class="app">
+                        <a href="#">
+                            <img src="./assets/img/avatar.jpg" alt="">
+                            <p>Account</p>
+                        </a>
+                    </li>
+                    <li class="app">
+                        <a href="#">
+                            <img src="./assets/img/Google_icons/icons8-google-100.png" alt="">
+                            <p>Search</p>
+                        </a>
+                    </li>
+                    <li class="app">
+                        <a href="#">
+                            <img src="./assets/img/Google_icons/icons8-youtube-100.png" alt="">
+                            <p>Youtube</p>
+                        </a>
+                    </li>
+                    <li class="app">
+                        <a href="#">
+                            <img src="./assets/img/Google_icons/icons8-google-play-100.png" alt="">
+                            <p>Play</p>
+                        </a>
+                    </li>
+                    <li class="app">
+                        <a href="#">
+                            <img src="./assets/img/Google_icons/icons8-google-news-100.png" alt="">
+                            <p>News</p>
+                        </a>
+                    </li>
+                    <li class="app">
+                        <a href="#">
+                            <img src="./assets/img/Google_icons/icons8-gmail-100.png" alt="">
+                            <p>Gmail</p>
+                        </a>
+                    </li>
+                    <li class="app">
+                        <a href="#">
+                            <img src="./assets/img/Google_icons/icons8-google-meet-100.png" alt="">
+                            <p>Meet</p>
+                        </a>
+                    </li>
+                    <li class="app">
+                        <a href="#">
+                            <img src="./assets/img/Google_icons/icons8-contacts-100.png" alt="">
+                            <p>Contacts</p>
+                        </a>
+                    </li>
+                    <li class="app">
+                        <a href="#">
+                            <img src="./assets/img/Google_icons/icons8-google-drive-100.png" alt="">
+                            <p>Drive</p>
+                        </a>
+                    </li>
+                    <li class="app">
+                        <a href="#">
+                            <img src="./assets/img/Google_icons/icons8-google-calendar-100.png" alt="">
+                            <p>Calendar</p>
+                        </a>
+                    </li>
+                    <li class="app">
+                        <a href="#">
+                            <img src="./assets/img/Google_icons/icons8-translate-text-100.png" alt="">
+                            <p>Translate</p>
+                        </a>
+                    </li>
+                    <li class="app">
+                        <a href="#">
+                            <img src="./assets/img/Google_icons/icons8-google-shopping-100.png" alt="">
+                            <p>Shopping</p>
+                        </a>
+                    </li>
+                    <li class="app">
+                        <a href="#">
+                            <img src="./assets/img/Google_icons/icons8-google-maps-old-100.png" alt="">
+                            <p>Maps</p>
+                        </a>
+                    </li>
+                    <li class="app">
+                        <a href="#">
+                            <img src="./assets/img/Google_icons/icons8-google-sheets-100.png" alt="">
+                            <p>Sheet</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="avatar">
+            <img src="./assets/img/avatar.jpg" alt="a face">
+        </div>
+    </div>
+    <!-- END: HEADER -->
+
+    <!-- CENTER -->
+    <div class="center">
+        <div class="logo">
+            <img src="./assets/img/google_logo.png" alt="Google logo" class="logo">
+            <p>images</p>
+        </div>
+        <form action="">
+            <div class="search-bar">
+                    <i class="ti-search"></i>
+                    <input type="text">
+                    <img src="./assets/img/mic.png" alt="microphone">
+                    <img src="./assets/img/camera.svg" alt="camera">
+                    <i class="ti-search"></i>
+            </div>
+    </div>
+    <!-- END: CENTER -->
+
+    <div class="empty-space"></div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="country">
+            Vietnam
+        </div>
+        <div class="other-links">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">How Search works</a></li>
+            </ul>
+            
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- END: FOOTER -->
+
+    <!-- JS FOR SHOW/HIDE APP-MENU -->
+    <script>
+        const appMenuButton = document.querySelector('.app-menu-button')
+        const appMenu = document.querySelector('.app-menu')
+        const header = document.querySelector('.header')
+        const wholePage = document.querySelector('body')
+
+        appMenuButton.addEventListener('click', function (event) {
+            event.stopPropagation()
+            if (header.style.overflow === 'visible')
+                header.style.overflow = 'hidden'
+            else
+                header.style.overflow = 'visible'
+        })
+
+        appMenu.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
+        
+        wholePage.addEventListener('click', function () {
+            if (header.style.overflow === 'visible')
+                header.style.overflow = 'hidden'
+        })
+    </script>
+    <!-- END: JS FOR APP-MENU -->
+</body>
+</html>

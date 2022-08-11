@@ -72,7 +72,7 @@ body {
     width: 328px;
     height: 448px;
     z-index: 1;
-    overflow: hidden;
+    overflow: auto;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.3);
     border-radius: 2%;

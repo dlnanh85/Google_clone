@@ -22,8 +22,10 @@ body {
 .header {
     display: flex;
     justify-content: end;
-    padding: 14px 16px;
+    padding: 10px 16px;
     line-height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .header .nav {
@@ -42,26 +44,103 @@ body {
     text-decoration: underline;
 }
 
+/* HEAD -> APP-MENU */
+
 .header .app-menu-button {    
-    padding: 0px 22px;
+    padding: 0px 8px;
     margin: auto 0;
     font-size: 17px;
 }
 
 .header .app-menu-button i {
+    display: block;
+    padding: 12px;
     font-size: 17px;
 }
 
-.header .app-menu {
-    display: none;
+.header .app-menu-button i:hover {
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    cursor: pointer;
 }
 
-.header .avatar {
+.header .app-menu {
+    background-color: #fff;
+    margin-top: 12px;
+    position: absolute;
+    right: 16px;
+    width: 328px;
+    height: 448px;
+    z-index: 1;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 2%;
+}
 
+.header .app-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    list-style: none;
+    padding: 10px;
+}
+
+.header .app-menu .app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.header .app-menu .app:hover {
+    background-color: #e8f0fe;
+    cursor: pointer;
+}
+
+.header .app-menu .app a {
+    text-decoration: none;
+    width: 100%;
+}
+
+.header .app-menu ul:after {
+    content: "";
+    width: 90px;
+    height: 90px;
+}
+
+.header .app-menu .app img {
+    border-radius: 50%;
+    width: 45%;
+}
+
+.header .app-menu .app p {
+    font-size: 14px;
+    color: #202124;
+    margin-top: 12px;
+}
+
+/* END: APP-MENU */
+
+.header .avatar {
+    display: flex;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.header .avatar:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
 }
 
 .header .avatar img {
     border-radius: 50%;
+    margin: auto 0;
 }
 /* END: HEADER */
 

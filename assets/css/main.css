@@ -37,6 +37,8 @@
     text-decoration: underline;
 }
 
+/* HEAD -> APP-MENU */
+
 .header .app-menu-button {    
     padding: 0px 8px;
     margin: auto 0;
@@ -56,9 +58,62 @@
 }
 
 .header .app-menu {
-    display: block;
+    background-color: #fff;
+    margin-top: 10px;
     position: absolute;
+    right: 16px;
+    width: 328px;
+    height: 448px;
+    z-index: 1;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 2%;
 }
+
+.header .app-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    list-style: none;
+    padding: 10px;
+}
+
+.header .app-menu .app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.header .app-menu .app:hover {
+    background-color: #e8f0fe;
+    cursor: pointer;
+}
+
+.header .app-menu ul:after {
+    content: "";
+    width: 90px;
+    height: 90px;
+}
+
+.header .app-menu .app img {
+    border-radius: 50%;
+    width: 45%;
+}
+
+.header .app-menu .app p {
+    font-size: 14px;
+    color: #202124;
+    margin-top: 12px;
+}
+
+/* END: APP-MENU */
 
 .header .avatar {
     display: flex;

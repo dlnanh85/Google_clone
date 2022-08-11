@@ -97,6 +97,11 @@
     cursor: pointer;
 }
 
+.header .app-menu .app a {
+    text-decoration: none;
+    width: 100%;
+}
+
 .header .app-menu ul:after {
     content: "";
     width: 90px;

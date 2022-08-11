@@ -12,6 +12,12 @@
 }
 /* END: COMMON */
 
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 /* HEADER */
 .header {
     display: flex;
@@ -146,10 +152,13 @@
 
 /* END: CENTER */
 
+.empty-space {
+    display: block;
+    flex-grow: 1;
+}
+
 /* FOOTER */
 .footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     background-color: #f2f2f2;
 }   

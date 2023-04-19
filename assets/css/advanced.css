@@ -1,0 +1,143 @@
+body {
+    height: initial;
+}
+
+.header .logo {
+    width: 100px;
+    padding: 10px;
+}
+
+.header .logo img {
+    width: 100%;
+}
+
+.header {
+    justify-content: start;
+    padding: 10px 16px 5px 16px;
+}
+
+.header-middle {
+    flex-grow: 1;
+}
+
+.header-right {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    margin: 10px 30px;
+}
+
+.big-title {
+    padding: 10px 0 30px 0;
+    border-bottom: solid 1px #ccc;
+}
+
+.big-title p {
+    color: #D93025;
+    font-size: 20px;
+}
+
+.main .main-div {
+    padding: 40px 0;
+    border-bottom: solid 1px #ccc;
+}
+
+.main .main-div>p {
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: #333333;
+}
+
+.main .main-div .querry {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+}
+
+.main .main-div .querry:last-child .input p {
+    padding: 10px;
+}
+
+.input {
+    display: flex;
+    min-width: 500px;
+}
+
+
+.subtitle {
+    max-width: 182px;
+    flex-grow: 1;
+}
+
+input {
+    height: 30px;
+    padding: 0 5px;
+    min-width: 500px;
+    border: #ccc 1px solid;
+}
+
+input:focus {
+    outline: 1px solid #bbb;
+}
+
+select {
+    height: 30px;
+    padding: 0 5px;
+    min-width: 500px;
+    background-color: #f3f3f3;
+    border: #ccc 1px solid;
+}
+
+select:focus {
+    outline: 1px solid #bbb;
+}
+
+.input input {
+    min-width: auto;
+    flex-grow: 1;
+    border: #ccc 1px solid;
+}
+.instruction {
+    margin-left: 20px;
+    width: 500px;
+}
+
+.instruction p {
+    color: #666;
+    font-size: 12px;
+}
+
+.button-placeholder {
+    height: 30px;
+}
+
+button {
+    position: absolute;
+    left: 570px;
+    background-color: #357AEB;
+    padding: 0 10px;
+    color: white;
+    width: 144px;
+    height: 30px;
+    border: none;
+    margin: 20px 0;
+}
+
+.main-div a {
+    color: #0000EE;
+    display: block;
+    padding: 2px;
+    text-decoration: none;
+}
+
+.main .main-div:last-child {
+    border: none;
+}
+
+.footer .other-links a:hover {
+    text-decoration: none;
+    color: #444444;
+}

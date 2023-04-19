@@ -149,7 +149,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 108px;
+    /* margin-top: 108px; */
+    margin-top: 200px;
     position: relative;
     text-align: center;
 }
@@ -197,15 +198,22 @@ body {
 .center .search-buttons {
     font-size: 14px;
     margin-top: 3px;
+    display: inline-block;
 }
 
 .center .search-buttons button {
+    display: inline-block;
     padding: 0 16px;
     height: 36px;
     background-color: #f8f9fa;
     border: 1px solid rgba(0, 0, 0, 0);
     margin: 4px;
     border-radius: 4px;
+}
+
+.center .search-buttons button a {
+    text-decoration: none;
+    color: black;
 }
 
 .center .search-buttons button:hover {

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Search</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/advanced.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo header-left">
+            <img src="./assets/img/google_logo.png" alt="Google logo">
+        </div>
+        <div class="header-middle"></div>
+        <div class="header-right">
+            <div class="app-menu-button d-none">
+                <i class="ti-layout-grid3-alt"></i>
+                <div class="app-menu">
+                    <ul>
+                        <li class="app">
+                            <a href="#">
+                                <img src="./assets/img/avatar.jpg" alt="">
+                                <p>Account</p>
+                            </a>
+                        </li>
+                        <li class="app">
+                            <a href="#">
+                                <img src="./assets/img/Google_icons/icons8-google-100.png" alt="">
+                                <p>Search</p>
+                            </a>
+                        </li>
+                        <li class="app">
+                            <a href="#">
+                                <img src="./assets/img/Google_icons/icons8-youtube-100.png" alt="">
+                                <p>Youtube</p>
+                            </a>
+                        </li>
+                        <li class="app">
+                            <a href="#">
+                                <img src="./assets/img/Google_icons/icons8-google-play-100.png" alt="">
+                                <p>Play</p>
+                            </a>
+                        </li>
+                        <li class="app">
+                            <a href="#">
+                                <img src="./assets/img/Google_icons/icons8-google-news-100.png" alt="">
+                                <p>News</p>
+                            </a>
+                        </li>
+                        <li class="app">
+                            <a href="#">
+                                <img src="./assets/img/Google_icons/icons8-gmail-100.png" alt="">
+                                <p>Gmail</p>
+                            </a>
+                        </li>
+                        <li class="app">
+                            <a href="#">
+                                <img src="./assets/img/Google_icons/icons8-google-meet-100.png" alt="">
+                                <p>Meet</p>
+                            </a>
+                        </li>
+                        <li class="app">
+                            <a href="#">
+                                <img src="./assets/img/Google_icons/icons8-contacts-100.png" alt="">
+                                <p>Contacts</p>
+                            </a>
+                        </li>
+                        <li class="app">
+                            <a href="#">
+                                <img src="./assets/img/Google_icons/icons8-google-drive-100.png" alt="">
+                                <p>Drive</p>
+                            </a>
+                        </li>
+                        <li class="app">
+                            <a href="#">
+                                <img src="./assets/img/Google_icons/icons8-google-calendar-100.png" alt="">
+                                <p>Calendar</p>
+                            </a>
+                        </li>
+                        <li class="app">
+                            <a href="#">
+                                <img src="./assets/img/Google_icons/icons8-translate-text-100.png" alt="">
+                                <p>Translate</p>
+                            </a>
+                        </li>
+                        <li class="app">
+                            <a href="#">
+                                <img src="./assets/img/Google_icons/icons8-google-shopping-100.png" alt="">
+                                <p>Shopping</p>
+                            </a>
+                        </li>
+                        <li class="app">
+                            <a href="#">
+                                <img src="./assets/img/Google_icons/icons8-google-maps-old-100.png" alt="">
+                                <p>Maps</p>
+                            </a>
+                        </li>
+                        <li class="app">
+                            <a href="#">
+                                <img src="./assets/img/Google_icons/icons8-google-sheets-100.png" alt="">
+                                <p>Sheet</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="avatar">
+                <img src="./assets/img/avatar.jpg" alt="a face">
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="big-title">
+            <p>Advanced Search</p>
+        </div>
+        <form action="https://www.google.com/search">
+            <div class="main-div">
+                <p class="title">Find pages with...</p>
+                <div class="querry">
+                    <div class="subtitle">
+                        <p>all these words:</p>
+                    </div>
+                    <input type="text" name="as_q">
+                    <div class="instruction">
+                        <p>Type the important words: tri-colour rat terrier</p>
+                    </div>
+                </div>
+                <div class="querry">
+                    <div class="subtitle">
+                        <p>this exact word or phrase:</p>
+                    </div>
+                    <input type="text" name="as_epq">
+                    <div class="instruction">
+                        <p>Put exact words in quotes: "rat terrier"</p>
+                    </div>
+                </div>
+                <div class="querry">
+                    <div class="subtitle">
+                        <p>any of these words:</p>
+                    </div>
+                    <input type="text" name="as_oq">
+                    <div class="instruction">
+                        <p>Type OR between all the words you want: miniature OR standard</p>
+                    </div>
+                </div>
+                <div class="querry">
+                    <div class="subtitle">
+                        <p>none of these words:</p>
+                    </div>
+                    <input type="text" name="as_eq">
+                    <div class="instruction">
+                        <p>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</p>
+                    </div>
+                </div>
+                <div class="querry">
+                    <div class="subtitle">
+                        <p>numbers ranging from:</p>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="as_nlo">
+                        <p>to</p>
+                        <input type="text" name="as_nhi">
+                    </div>
+                    <div class="instruction">
+                        <p>Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-div">
+                <p class="title">Then narrow your results by...</p>
+                <div class="querry">
+                    <div class="subtitle">
+                        <p>language:</p>
+                    </div>
+
+                    <select name="lr">
+                        <option value="" selected>any language</option>
+                        <option value="lang_en">English</option>
+                        <option value="lang_vi">Vietnamese</option>
+                        <option value="lang_es">Spanish</option>
+                        <option value="lang_zh">Chinese</option>
+                    </select>
+
+                    <div class="instruction">
+                        <p>Find pages in the language that you select.</p>
+                    </div>
+                </div>
+                <div class="querry">
+                    <div class="subtitle">
+                        <p>region:</p>
+                    </div>
+
+                    <select name="cr">
+                        <option value="" selected>any region</option>
+                        <option value="countryUS">United States</option>
+                        <option value="countryUK">United Kingdom</option>
+                        <option value="countryVN">Vietnam</option>
+                        <option value="countryES">Spain</option>
+                        <option value="countryCN">China</option>
+                    </select>
+
+                    <div class="instruction">
+                        <p>Find pages published in a particular region.</p>
+                    </div>
+                </div>
+                <div class="querry">
+                    <div class="subtitle">
+                        <p>last update:</p>
+                    </div>
+                    
+                    <select name="as_qdr">
+                        <option value="all" selected>anytime</option>
+                        <option value="d">past 24 hours</option>
+                        <option value="w">past week</option>
+                        <option value="m">past month</option>
+                        <option value="y">past year</option>
+                    </select>
+                    
+
+                    <div class="instruction">
+                        <p>Find pages updated within the time that you specify.</p>
+                    </div>
+                </div>
+                <div class="querry">
+                    <div class="subtitle">
+                        <p>site or domain:</p>
+                    </div>
+                    
+                    <input type="text" name="as_sitesearch">
+
+                    <div class="instruction">
+                        <p>Search one site (like wikipedia.org ) or limit your results to a domain like .edu, .org or .gov</p>
+                    </div>
+                </div>
+                <div class="querry">
+                    <div class="subtitle">
+                        <p>terms appearing:</p>
+                    </div>
+                    
+                    <select name="as_occt">
+                        <option value="any" selected>anywhere in the page</option>
+                        <option value="title">in the title of the page</option>
+                        <option value="text">in the text of the page</option>
+                        <option value="url">in the URL of the page</option>
+                        <option value="links">in links to the page</option>
+                    </select>
+
+                    <div class="instruction">
+                        <p>Search for terms in the whole page, page title or web address, or links to the page you're looking for.</p>
+                    </div>
+                </div>
+                <div class="querry">
+                    <div class="subtitle">
+                        <p>SafeSearch:</p>
+                    </div>
+                    
+                    <select name="safe">
+                        <option value="images" selected>Show explicit results</option>
+                        <option value="active">Hide explicit results</option>
+                    </select>
+
+                    <div class="instruction">
+                        <p>Tell SafeSearch whether to filter sexually explicit content.</p>
+                    </div>
+                </div>
+                <div class="querry">
+                    <div class="subtitle">
+                        <p>file type:</p>
+                    </div>
+                    
+                    <select name="as_filetype">
+                        <option value="" selected>any format</option>
+                        <option value="pdf">Adobe Acrobat PDF (.pdf)</option>
+                        <option value="ps">Adobe Postscript (.ps)</option>
+                        <option value="dwf">Autodesk DWF (.dwf)</option>
+                        <option value="kml">Google Earth KML (.kml)</option>
+                        <option value="kmz">Google Earth KMZ (.kmz)</option>
+                        <option value="xls">Microsoft Excel (.xls)</option>
+                        <option value="ppt">Microsoft PowerPoint (.ppt)</option>
+                        <option value="doc">Microsoft Word (.doc)</option>
+                    </select>
+
+                    <div class="instruction">
+                        <p>Find pages in the format that you prefer.</p>
+                    </div>
+                </div>
+                <div class="querry">
+                    <div class="subtitle">
+                        <p>usage rights:</p>
+                    </div>
+                    
+                    <select name="tbs">
+                        <option value="" selected>not filtered by licence</option>
+                        <option value="sur%3Af">free to use or share</option>
+                        <option value="sur%3Afc">free to use or share, even commercially</option>
+                        <option value="sur%3Afm">free to use share or modify</option>
+                        <option value="sur%3Afmc">free to use, share or modify, even commercially</option>
+                    </select>
+
+                    <div class="instruction">
+                        <p>Find pages that you are free to use yourself.</p>
+                    </div>
+                </div>
+
+                <button type="submit">Advanced Search</button>
+                <div class="button-placeholder"></div>
+            </div>
+        </form>
+        <div class="main-div">
+            <p class="title">You can also...</p>
+            <a href="https://support.google.com/websearch?p=adv_pages_similar&hl=en">Find pages that are similar to a URL</a>
+            <a href="https://support.google.com/websearch?p=adv_pages_visited&hl=en">Search pages that you've visited</a>
+            <a href="https://support.google.com/websearch?p=adv_operators&hl=en">Use operators in the search box</a>
+            <a href="https://www.google.com/preferences?hl=en">Customise your search settings</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="country">
+            Vietnam
+        </div>
+        <div class="other-links">            
+            <ul>
+                <li><a href="https://policies.google.com/privacy?hl=en-VN&fg=1">Privacy</a></li>
+                <li><a href="https://policies.google.com/terms?hl=en-VN&fg=1">Terms</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>

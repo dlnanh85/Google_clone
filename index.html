@@ -15,7 +15,7 @@
     <div class="header">
         <div class="nav">
             <a href="">Gmail</a>
-            <a href="./image.html">Images</a>
+            <a href="./images.html">Images</a>
         </div>
 
         <div class="app-menu-button">
@@ -119,16 +119,16 @@
     <!-- CENTER -->
     <div class="center">
         <img src="./assets/img/google_logo.png" alt="Google logo" class="logo">
-        <form action="">
+        <form action="https://www.google.com/search">
             <div class="search-bar">
                     <i class="ti-search"></i>
-                    <input type="text">
+                    <input type="text" name="q">
                     <img src="./assets/img/mic.png" alt="microphone">
             </div>
             
             <div class="search-buttons">
                 <button>Google Search</button>
-                <button>I'm Feeling Lucky</button>
+                <button><a href="https://www.google.com/doodles">I'm Feeling Lucky</a></button>
             </div>
         </form>
 
@@ -151,15 +151,15 @@
         </div>
         <div class="other-links">
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Advertising</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">How Search works</a></li>
+                <li><a href="https://about.google/?utm_source=google-VN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
+                <li><a href="https://www.google.com/intl/en_vn/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+                <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a></li>
+                <li><a href="https://google.com/search/howsearchworks/?fg=1">How Search works</a></li>
             </ul>
             
             <ul>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Terms</a></li>
+                <li><a href="https://policies.google.com/privacy?hl=en-VN&fg=1">Privacy</a></li>
+                <li><a href="https://policies.google.com/terms?hl=en-VN&fg=1">Terms</a></li>
                 <li><a href="#">Settings</a></li>
             </ul>
         </div>
@@ -167,29 +167,7 @@
     <!-- END: FOOTER -->
 
     <!-- JS FOR SHOW/HIDE APP-MENU -->
-    <script>
-        const appMenuButton = document.querySelector('.app-menu-button')
-        const appMenu = document.querySelector('.app-menu')
-        const header = document.querySelector('.header')
-        const wholePage = document.querySelector('body')
-
-        appMenuButton.addEventListener('click', function (event) {
-            event.stopPropagation()
-            if (header.style.overflow === 'visible')
-                header.style.overflow = 'hidden'
-            else
-                header.style.overflow = 'visible'
-        })
-
-        appMenu.addEventListener('click', function (event) {
-            event.stopPropagation()
-        })
-        
-        wholePage.addEventListener('click', function () {
-            if (header.style.overflow === 'visible')
-                header.style.overflow = 'hidden'
-        })
-    </script>
+    <script src="./assets/js/index.js"></script>
     <!-- END: JS FOR APP-MENU -->
 </body>
 </html>
